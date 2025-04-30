@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import {
   Github,
@@ -10,14 +10,18 @@ import {
   Twitter,
   Facebook,
   FacebookIcon,
+  Menu,
+  X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimatedBackground } from "@/components/animated-background";
 import { ProjectCard } from "@/components/project-card";
 import { SkillBadge } from "@/components/skill-badge";
-import { MobileNav } from "@/components/mobile-nav";
 import { ProfileImage } from "@/components/profile-image";
 import { ResumeButton } from "@/components/resume-button";
+
+
+
 export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -73,12 +77,6 @@ export default function Home() {
             >
               Skills
             </Link>
-            {/* <Link
-              href="#contact"
-              className="hover:text-purple-400 transition-colors"
-            >
-              Contact
-            </Link> */}
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
@@ -111,7 +109,6 @@ export default function Home() {
             </Link>
           </div>
 
-          <MobileNav />
         </div>
       </header>
 
@@ -124,10 +121,10 @@ export default function Home() {
           <div className="flex flex-col items-center mb-8">
             {/* Modern Profile Image Component */}
             <ProfileImage
-              src="/ikea1.jpg"
+              src="./profile.png"
               alt="Shobhit Kori"
               size="lg"
-              className="mb-6"
+              className="mb-6 z-10 relative"
             />
             <ResumeButton
               resumeUrl="/resume.pdf"
