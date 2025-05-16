@@ -133,9 +133,9 @@ export default function Home() {
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            {/*<span className="block">Full Stack</span>*/}
+            <span className="block">Full Stack</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              {/*MERN Developer*/}
+              MERN Developer
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
