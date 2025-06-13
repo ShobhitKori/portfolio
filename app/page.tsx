@@ -127,7 +127,7 @@ export default function Home() {
               className="mb-6 z-10 relative"
             />
             <ResumeButton
-              resumeUrl="/resume.pdf"
+              resumeUrl="/Shobhit-Kori-Resume.pdf"
               variant="outline"
               className="mt-4 border-gray-700 hover:border-purple-500 transition-colors"
             />
@@ -231,7 +231,15 @@ export default function Home() {
               Projects
             </span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <ProjectCard
+              title=" Voice-to-Code– AI-Powered Speech-to-Code Generator"
+              description="An end-to-end AI solution translating voice commands into executable code."
+              tags={["NextJS", "FastAPI", "Hugging Face"]}
+              imageUrl="voice-to-code.png"
+              demoUrl="https://voice-to-code-hf.vercel.app/"
+              repoUrl="https://github.com/ShobhitKori/voice-to-code/"
+            />
             <ProjectCard
               title="Intervui.io Clone"
               description="A SaaS-based interview platform enabling companies to conduct technical assessments with real-time coding and video features."
@@ -246,16 +254,8 @@ export default function Home() {
               tags={["React", "Node.js", "Express", "MongoDB"]}
               imageUrl="cc.png"
               demoUrl="#"
-              repoUrl="#"
+              repoUrl="https://github.com/ShobhitKori/CharityConnect"
             />
-            {/* <ProjectCard
-              title="Social Media Dashboard"
-              description="An analytics dashboard that aggregates data from multiple social media platforms with visualization tools."
-              tags={["React", "D3.js", "Express", "MongoDB"]}
-              imageUrl="/placeholder.svg?height=200&width=400"
-              demoUrl="#"
-              repoUrl="#"
-            /> */}
           </div>
         </div>
       </section>
@@ -289,23 +289,22 @@ export default function Home() {
               <div className="flex flex-wrap gap-3">
                 <SkillBadge name="Node.js" />
                 <SkillBadge name="Express.js" />
+                <SkillBadge name="FastAPI" />
                 <SkillBadge name="MongoDB" />
                 <SkillBadge name="REST API" />
-                <SkillBadge name="JWT" />
+                <SkillBadge name="GraphQL" />
               </div>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold mb-4">Tools & Cloud</h3>
               <div className="flex flex-wrap gap-3">
-                <SkillBadge name="Git" />
-                <SkillBadge name="GitHub" />
+                <SkillBadge name="Azure" />
                 <SkillBadge name="Docker" />
-                <SkillBadge name="Kubernetes" />
                 <SkillBadge name="Jenkins" />
-                <SkillBadge name="Jest" />
-                <SkillBadge name="CI/CD" />
-                <SkillBadge name="Webpack" />
+                <SkillBadge name="GitHub Actions" />
+                <SkillBadge name="Git" />
+                <SkillBadge name="Azure Functions" />
               </div>
             </div>
           </div>
