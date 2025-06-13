@@ -8,7 +8,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Shobhit Kori - Full Stack MERN Developer",
   description: "Portfolio website showcasing my projects and skills as a Full Stack MERN Developer",
-    generator: 'v0.dev'
+  icons: {
+    icon: '/logo.png'
+  }
 }
 
 export default function RootLayout({
